@@ -16,3 +16,5 @@ Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)�
 	libavcodec.so, libavdevice.so libavfilter.so libavformat.so libavutil.so libswresample.so libswscale.so	
 	
 ### hello_ffmpeg示例
+参考[ffmpeg-libav-tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial)写得入门示例，取一个视频的
+前几帧，保存为.pgm格式的图片。
