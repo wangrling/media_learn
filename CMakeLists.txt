@@ -4,3 +4,6 @@ project(media_learn)
 
 add_subdirectory(ffmpeg)
 
+add_subdirectory(sdl)
+
+
