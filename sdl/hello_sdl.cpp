@@ -6,6 +6,7 @@ extern "C" {
 #include <SDL2/SDL.h>
 }
 #include <iostream>
+#include "res_path.h"
 
 int main(int argc, char *argv[]) {
 
@@ -28,7 +29,43 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    std::string imagePath = getResourcePath() + "hello.bmp";
+    SDL_Surface *bmp = SDL_LoadBMP(imagePath.c_str());
+    if (bmp == nullptr) {
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        std::cout << "SDL_LoadBMP Error: " << SDL_GetError() << std::endl;
+        SDL_Quit();
+        return 1;
+    }
 
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, bmp);
+    SDL_FreeSurface(bmp);
+    if (texture == nullptr) {
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        std::cout << "SDL_CreateTextureFromSurface Error: " << SDL_GetError() << std::endl;
+        SDL_Quit();
+
+        return 1;
+    }
+
+    // A sleep rendering loop, wait for 3 seconds and render an present the screen each time.
+    for (int i = 0; i < 3; ++i) {
+        // First clear the renderer.
+        SDL_RenderClear(renderer);
+        // Draw the texture.
+        SDL_RenderCopy(renderer, texture, NULL, NULL);
+        // update the screen.
+        SDL_RenderPresent(renderer);
+        // Take a quick break after all that hard work
+        SDL_Delay(1000);
+    }
+
+    SDL_DestroyTexture(texture);
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
 
     return 0;
 }

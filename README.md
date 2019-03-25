@@ -1,6 +1,31 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
+## sdl2
+### SDL2安装
+1. 下载源码。
+2. ./configure
+3. make
+4. sudo make install
+5. 结合cmake使用  
+    `find_package(SDL2 REQUIRED)`  
+    `target_link_libraries(${target} SDL2)`
+
+### cleanup res_path
+清除内存和文件路径两个函数。
+
+### hello_sdl
+加载一张bmp图片，在窗口中显示。
+
+### multi_function
+将相关功能从main函数中拆分出多个函数。
+
+### extension_lib
+目前还没有找到SDL2_image.h头文件？
+   
+
+---
+
 ## ffmpeg
 
 ### ffmpeg安装
@@ -28,15 +53,6 @@
 
 ### write_frames示例
 解析视频的前几帧，使用sws_scale转换成为RGB格式，最后保存为.ppm的图片。
-
-### SDL2安装
-1. 下载源码。
-2. ./configure
-3. make
-4. sudo make install
-5. 结合cmake使用  
-    `find_package(SDL2 REQUIRED)`  
-    `target_link_libraries(${target} SDL2)`
 
 ### sdl_play_video示例
 使用SDL多媒体框架进行视频播放。    
