@@ -2,15 +2,19 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="media_learn" targetName="metadata" />
+      <config projectName="media_learn" targetName="res_path" />
+      <config projectName="media_learn" targetName="sdl_font" />
+      <config projectName="media_learn" targetName="avio_reading" />
+      <config projectName="media_learn" targetName="hello_sdl" />
       <config projectName="media_learn" targetName="extension_lib" />
       <config projectName="media_learn" targetName="hello_ffmpeg" />
-      <config projectName="media_learn" targetName="AVFormatContext_test" />
-      <config projectName="media_learn" targetName="multi_function" />
-      <config projectName="media_learn" targetName="hello_sdl" />
-      <config projectName="media_learn" targetName="avio_reading" />
-      <config projectName="media_learn" targetName="res_path" />
+      <config projectName="media_learn" targetName="metadata" />
+      <config projectName="media_learn" targetName="clipping_sprite" />
       <config projectName="media_learn" targetName="write_frames" />
+      <config projectName="media_learn" targetName="multi_function" />
+      <config projectName="media_learn" targetName="AVFormatContext_test" />
+      <config projectName="media_learn" targetName="unique_ptr_test" />
+      <config projectName="media_learn" targetName="handle_events" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -20,11 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebd2bff2-238c-42cf-8682-73353f0eccca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/wangrl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/wangrl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sdl/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sdl/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdl/hello_sdl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sdl/hello_sdl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdl/extension_lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sdl/extension_lib.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,41 +43,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/cpp/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sdl/multi_function.cpp">
+        <entry file="file://$PROJECT_DIR$/sdl/handle_events.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+            <state relative-caret-position="2336">
+              <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
               <folding>
-                <element signature="e#40#57#0" expanded="true" />
+                <element signature="e#40#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/unique_ptr_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <folding>
+                <element signature="e#40#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sdl/extension_lib.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="72">
+                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -79,13 +90,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sdl/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,19 +124,26 @@
         <option value="$PROJECT_DIR$/sdl/hello_sdl.cpp" />
         <option value="$PROJECT_DIR$/sdl/multi_function.cpp" />
         <option value="$PROJECT_DIR$/sdl/easy_cleanup.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/sdl/extension_lib.cpp" />
+        <option value="$PROJECT_DIR$/sdl/handle_events.cpp" />
+        <option value="$PROJECT_DIR$/sdl/clipping_sprite.cpp" />
         <option value="$PROJECT_DIR$/sdl/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/sdl/sdl_font.cpp" />
+        <option value="$PROJECT_DIR$/cppprimer/unique_ptr_test.cpp" />
+        <option value="$PROJECT_DIR$/cppprimer/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cpp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cpp/unique_ptr_test.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="346" />
-    <option name="y" value="253" />
-    <option name="width" value="1297" />
-    <option name="height" value="705" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="307" />
+    <option name="y" value="243" />
+    <option name="width" value="1538" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -134,6 +159,11 @@
             <path>
               <item name="media_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="media_learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="media_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="media_learn" type="b2602c69:ProjectViewProjectNode" />
@@ -155,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
@@ -165,8 +195,8 @@
       <recent name="$PROJECT_DIR$/cmake-build-debug/sdl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sdl" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/sdl/res" />
+      <recent name="$PROJECT_DIR$/sdl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.extension_lib">
+  <component name="RunManager" selected="Application.unique_ptr_test">
     <configuration name="AVFormatContext_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="AVFormatContext_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="AVFormatContext_test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -192,7 +222,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="clipping_sprite" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="clipping_sprite" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="clipping_sprite">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="extension_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="extension_lib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="extension_lib">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="handle_events" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="handle_events" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="handle_events">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -222,21 +262,35 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sdl_font" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="sdl_font" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="sdl_font">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unique_ptr_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="unique_ptr_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="unique_ptr_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="write_frames" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="media_learn" TARGET_NAME="write_frames" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="media_learn" RUN_TARGET_NAME="write_frames">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.unique_ptr_test" />
       <item itemvalue="Application.AVFormatContext_test" />
       <item itemvalue="Application.avio_reading" />
       <item itemvalue="Application.hello_ffmpeg" />
       <item itemvalue="Application.metadata" />
       <item itemvalue="Application.write_frames" />
+      <item itemvalue="Application.clipping_sprite" />
       <item itemvalue="Application.extension_lib" />
+      <item itemvalue="Application.handle_events" />
       <item itemvalue="Application.hello_sdl" />
       <item itemvalue="Application.multi_function" />
       <item itemvalue="Application.res_path" />
+      <item itemvalue="Application.sdl_font" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -255,32 +309,55 @@
       <workItem from="1553354912551" duration="1704000" />
       <workItem from="1553426933590" duration="3241000" />
       <workItem from="1553519417148" duration="7853000" />
+      <workItem from="1553561416788" duration="1847000" />
+      <workItem from="1553563273197" duration="528000" />
+      <workItem from="1553598415641" duration="609000" />
+      <workItem from="1553649466714" duration="32000" />
+      <workItem from="1553669307011" duration="271000" />
+      <workItem from="1553676655733" duration="7297000" />
+      <workItem from="1553824976171" duration="704000" />
+      <workItem from="1553825689485" duration="259000" />
+      <workItem from="1553825959268" duration="92000" />
+      <workItem from="1553826059994" duration="115000" />
+      <workItem from="1553826184355" duration="27000" />
+      <workItem from="1553826220661" duration="104000" />
+      <workItem from="1553826335682" duration="910000" />
+      <workItem from="1553827255310" duration="298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28875000" />
+    <option name="totallyTimeSpent" value="41968000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="307" y="243" width="1538" height="853" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21313673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36631945" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35285914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914925" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.4924406" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.41701534" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32721382" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32775453" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32357043" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -290,11 +367,48 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch..txt" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/local/include/libavutil/mem.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -339,16 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdl/res_path.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#40#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sdl/res_path.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -363,17 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" selection-start-line="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg/hello_ffmpeg.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="206" column="27" selection-start-line="206" selection-start-column="27" selection-end-line="206" selection-end-column="27" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-            <element signature="e#156#187#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -409,44 +502,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sdl/CMakeFiles/FindSDL2_ttf.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sdl/CMakeFiles/FindSDL2_image.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sdl/CMakeFiles/FindSDL2_ttf.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sdl/CMakeFiles/FindSDL2_image.cmake" />
+    <entry file="file://$PROJECT_DIR$/sdl/res_path.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sdl/hello_sdl.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-324">
           <folding>
             <element signature="e#77#96#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/ffmpeg/hello_ffmpeg.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="464">
+          <caret line="206" column="27" selection-start-line="206" selection-start-column="27" selection-end-line="206" selection-end-column="27" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+            <element signature="e#156#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cpp/cpp_learn.cbp" />
     <entry file="file://$PROJECT_DIR$/sdl/multi_function.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="1620">
           <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
           <folding>
             <element signature="e#40#57#0" expanded="true" />
@@ -454,17 +545,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdl/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl/sdl_font.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl/clipping_sprite.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="e#40#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sdl/extension_lib.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="626">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding>
+            <element signature="e#40#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/unique_ptr_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl/handle_events.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2336">
+          <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="72">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

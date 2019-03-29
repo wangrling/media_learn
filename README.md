@@ -1,7 +1,11 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
-## sdl2
+## Cpp
+
+---
+
+## SDL2
 ### SDL2安装
 1. 下载源码。
 2. ./configure
@@ -22,11 +26,24 @@
 
 ### extension_lib
 目前还没有找到SDL2_image.h头文件？
+需要单独安装
+https://www.libsdl.org/projects/SDL_image/
+运行的时候报错  
+error while loading shared libraries: libSDL2_image-2.0.so.0  
+vim .bashrc  
+`export LD_LIBRARY_PATH="/usr/local/lib"`
+source .bashrc
+加载png图片进行显示。
+
+### handle_events
+处理用户的输入事件，截取png图片的不同部分显示相对应的颜色。
+
+### sdl_font
    
 
 ---
 
-## ffmpeg
+## FFmpeg
 
 ### ffmpeg安装
 1. 下载源码

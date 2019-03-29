@@ -15,6 +15,7 @@
       <w>libswresample</w>
       <w>libswscale</w>
       <w>printf</w>
+      <w>smod</w>
       <w>wangrl</w>
     </words>
   </dictionary>
