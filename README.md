@@ -1,6 +1,14 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
+## Skia
+### Skia编译
+bin/gn gen out/Shared --args='extra_cflags=["-w"]'
+ninja -C out/Shared
+
+---
+
+
 ## Cpp
 
 ---
@@ -25,9 +33,9 @@
 将相关功能从main函数中拆分出多个函数。
 
 ### extension_lib
-目前还没有找到SDL2_image.h头文件？
+目前还没有找到SDL2_image.h头文件？  
 需要单独安装
-https://www.libsdl.org/projects/SDL_image/
+https://www.libsdl.org/projects/SDL_image/  
 运行的时候报错  
 error while loading shared libraries: libSDL2_image-2.0.so.0  
 vim .bashrc  
