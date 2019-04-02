@@ -1,6 +1,18 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
+
+## GN
+GN is a meta-build system that generates build files for Ninja.
+### gn编译
+git clone https://gn.googlesource.com/gn    
+cd gn   
+python build/gen.py 
+ninja -C out    
+To run tests:    
+out/gn_unittests    
+
+---
 ## Skia
 ### Skia编译
 bin/gn gen out/Shared --args='extra_cflags=["-w"]'
