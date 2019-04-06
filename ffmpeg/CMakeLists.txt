@@ -12,6 +12,8 @@ set(FFMPEG_TESTS
         metadata
         AVFormatContext_test
         write_frames
+        Muxing_test
+        muxing
         )
 
 foreach(TEST ${FFMPEG_TESTS})
