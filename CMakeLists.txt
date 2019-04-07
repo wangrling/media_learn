@@ -13,4 +13,6 @@ add_subdirectory(sdl)
 
 add_subdirectory(cpp)
 
+add_subdirectory(libpng)
+
 

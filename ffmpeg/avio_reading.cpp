@@ -25,15 +25,19 @@ int main(int argc, char* argv[]) {
     uint8_t *avio_ctx_buffer = NULL;
     size_t avio_ctx_buffer_size = 4096;
 
+    /*
     if (argc != 2) {
         fprintf(stderr, "usage: %s input_file\n"
                         "API example program to show how to read from a custom buffer "
                         "accessed through AVIOContext.\n", argv[0]);
         return 1;
     }
+     */
 
     // 输入文件名
-    char* input_filename = argv[1];
+    // char* input_filename = argv[1];
+    char* input_filename = "/home/wangrl/Videos/small_bunny_1080p_30fps.mp4";
+
 
     /**
      * slurp file content int buffer.

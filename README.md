@@ -1,7 +1,7 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
-
+---
 ## GN
 GN is a meta-build system that generates build files for Ninja.
 ### gn编译
@@ -74,6 +74,17 @@ source .bashrc
 3. `make` && `sudo make install`
 	头文件在/usr/local/include/目录下面，生成库文件在/usr/local/lib目录下面。  
 	libavcodec.so, libavdevice.so libavfilter.so libavformat.so libavutil.so libswresample.so libswscale.so	
+
+### 知识点
+1. libavcodec       Encoding/Decoding Library.
+2. libavdevice      Special devices muxing/demuxing library.
+3. libavfilter      Graph-based frame editing library.
+4. libavformat      I/O and Muxing/Demuxing Library.
+5. libavresample    Libavresample (lavr) is a library that handles audio resampling, sample format conversion and mixing.
+6. libavutil        Common code shared across all FFmpeg libraries.
+7. libpostproc      Video postprocessing library.
+8. libswresample    Audio resampling, sample format conversion and mixing library.
+9. libswscale       Color conversion and scaling library.
 	
 ### hello_ffmpeg示例
 参考[ffmpeg-libav-tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial)写得入门示例，取一个视频的
