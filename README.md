@@ -1,6 +1,11 @@
 # media_learn
 多媒体学习教程，陆续添加中，Markdown[基础语法参考网站](https://www.markdownguide.org/basic-syntax)。
 
+## Shell脚本编写
+[Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)
+
+
+
 ---
 ## GN
 GN is a meta-build system that generates build files for Ninja.
@@ -10,7 +15,9 @@ cd gn
 python build/gen.py 
 ninja -C out    
 To run tests:    
-out/gn_unittests    
+out/gn_unittests
+
+
 
 ---
 ## Skia
@@ -104,3 +111,5 @@ source .bashrc
 
 ### sdl_play_video示例
 使用SDL多媒体框架进行视频播放。    
+
+### muxing.c 使用frame合成视频的示例

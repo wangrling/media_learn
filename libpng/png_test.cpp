@@ -45,6 +45,9 @@ static int status_pass = 1;
 static int status_dots_requested = 0;
 static int status_dots = 1;
 
+static const char *inname = "pngtest.png";
+static const char *outname = "pngout.png";
+
 int main(int argc, char* argv[]) {
 
     int multiple = 0;
@@ -76,6 +79,35 @@ int main(int argc, char* argv[]) {
             multiple = 1;
             verbose = 1;
             status_dots_requested = 1;
+        } else if (strcmp(argv[1], "v") == 0) {
+            verbose = 1;
+            status_dots_requested = 1;
+            inname = argv[2];
+        } else if (strcmp(argv[1], "--strict") == 0) {
+            status_dots_requested = 0;
+            verbose = 1;
+            inname = argv[2];
+            strict++;
+            relaxed = 0;
+            multiple = 1;
+        } else if (strcmp(argv[1], "--relaxed") == 0) {
+            status_dots_requested = 0;
+            verbose = 1;
+            inname = argv[2];
+            strict = 0;
+            relaxed++;
+            multiple = 1;
+        } else if (strcmp(argv[1], "--xfail") == 0) {
+            status_dots_requested = 0;
+            verbose = 1;
+            inname = argv[2];
+            strict = 0;
+            xfail++;
+            relaxed++;
+            multiple = 1;
+        } else {
+            inname = argv[1];
+            status_dots_requested = 0;
         }
     }
 

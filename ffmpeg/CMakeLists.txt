@@ -29,3 +29,6 @@ set(FFmpegLib libavutil.so libavcodec.so libavformat.so libavdevice.so libavfilt
 
 add_executable(Demuxing_test avformat/Demuxing_test.cpp)
 target_link_libraries(Demuxing_test ${FFmpegLib})
+
+add_executable(muxing_src muxing.c)
+target_link_libraries(muxing_src ${FFmpegLib} -lm)
